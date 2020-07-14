@@ -28,7 +28,9 @@ body {
   color: var(--dark);
   
 }
-
+button {
+  font-size: 16px;
+}
 .tabs button {
   padding: 4px 12px;
   text-decoration: none;
@@ -151,4 +153,53 @@ main {
 
 .triangle {
   background-image: url(img/icon-face-triangle.svg);
+}
+
+.colors-container {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #6a6d6f;
+
+}
+
+.option-color {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin: 10px 0;
+  border: #aeaeae 1px solid;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.color1 {
+  background-color: black;
+}
+.color2 {
+  background-color:#ebf0f2;
+}
+.color3 {
+  background-color: white;
+}
+.color4 {
+  background-color:#FFE8E3;
+}
+.color5 {
+  background-color:#F2D1C9;
+}
+.color6 {
+  background-color: #FFF2DE;
+}
+.color7 {
+  background-color:#97B7FF;
+}
+.color8 {
+  background-color:#97E7FF;
+}
+.color9 {
+  background-color: #FFAA96;
+}
+.color10 {
+  background-color: #F7C374;
 }

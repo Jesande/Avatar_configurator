@@ -114,11 +114,41 @@ main {
  display: flex;
  justify-content: space-evenly;
  align-items: baseline;
+ border-bottom: 1px solid #6a6d6f;
 }
 
 .face-shapes {
-  height: 120px;
   margin: 10px auto;
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
+}
+
+.option-shape {
+  display: inline-block;
+  width: 77px;
+  height: 93px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid var(--bg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.option-shape:hover, .option-shape:active {
+  background-color: var(--bg);
+  border: 1px solid #EFF4F7;
+} 
+
+.round {
+  background-image: url(img/icon-face-round.svg);
+}
+
+.square {
+  background-image: url(img/icon-face-square.svg);
+}
+
+.triangle {
+  background-image: url(img/icon-face-triangle.svg);
 }

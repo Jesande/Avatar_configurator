@@ -12,10 +12,40 @@
   </header>
   <main>
     <section class="avatar-container">
-      <article class="avatar-body">
-        <img src="img/basic-01.svg" alt="" class="head basic">
-        <img src="img/face-square-01.svg" alt="" class="head square hide">
-        <img src="img/face-triangle-01.svg" alt="" class="head triangle hide">
+      <article class="avatar-basic">
+        <img id="face1-img" src="img/basic-01.svg" alt="" class="head">
+      </article>
+      <article class="avatar-head-container">
+        <img id="face1-img" src="img/basic-01.svg" alt="" class="head">
+        <img id="face2-img" src="img/face-square-01.svg" alt="" class="head">
+        <img id="face3-img" src="img/face-triangle-01.svg" alt="" class="head">
+      </article>
+      <article class="avatar-hair-container">
+        <img id="hair1-img" src="img/hair1.svg" alt="" class="hair">
+        <img id="hair2-img" src="img/hair2.svg" alt="" class="hair hide">
+        <img id="hair3-img" src="img/hair3.svg" alt="" class="hair hide">
+      </article>
+      <article class="avatar-eyes-container">
+        <img id="eyes1-img" src="img/eyes1.svg" alt="" class="eyes hide">
+        <img id="eyes2-img" src="img/eyes2.svg" alt="" class="eyes hide">
+        <img id="eyes3-img" src="img/eyes3.svg" alt="" class="eyes">
+      </article>
+      <article class="avatar-nose-container">
+        <img id="nose1-img" src="img/nose1.svg" alt="" class="nose hide">
+        <img id="nose2-img" src="img/nose2.svg" alt="" class="nose hide">
+        <img id="nose3-img" src="img/nose3.svg" alt="" class="nose">
+      </article>
+      <article class="avatar-mouth-container">
+        <img id="mouth1-img" src="img/mouth1.svg" alt="" class="mouth hide">
+        <img id="mouth2-img" src="img/mouth2.svg" alt="" class="mouth hide">
+        <img id="mouth3-img" src="img/mouth3.svg" alt="" class="mouth">
+        <img id="mouth4-img" src="img/mouth4.svg" alt="" class="mouth hide">
+      </article>
+      <article class="avatar-clothes-container">
+        <img id="clothes1-img" src="img/clothes1.svg" alt="" class="clothes hide">
+        <img id="mouth2-img" src="img/clothes2.svg" alt="" class="clothes hide">
+        <img id="clothes3-img" src="img/clothes3.svg" alt="" class="clothes">
+
       </article>
       <article>
         <button>Reset</button>
@@ -33,10 +63,16 @@
         <button>Clothes</button>
       </article>
 
-      <article class="face-shapes">
-        <a href="" class="option-shape round"> </a>
-        <a href="" class="option-shape square"> </a>
-        <a href="" class="option-shape triangle"> </a>
+      <article id="face-box" class="face-container">
+        <a id="face1-btn" href="" class="option-shape round"> </a>
+        <a id="face2-btn" href="" class="option-shape square"> </a>
+        <a id="face3-btn" href="" class="option-shape triangle"> </a>
+        <img src="img/icon-check.svg" alt="">
+      </article>
+      <article id="hair-box" class="hair hide">
+        <a id="hair1" href="" class="option-hair hair1"> </a>
+        <a id="hair2" href="" class="option-hair hair2"> </a>
+        <a id="hair3" href="" class="option-hair hair3"> </a>
       </article>
     </section>
 
@@ -59,5 +95,7 @@
     </div>
 
   </main>
+
+  <script src="main.js"></script>
 </body>
 </html>

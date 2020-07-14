@@ -28,9 +28,11 @@ body {
   color: var(--dark);
   
 }
+
 button {
   font-size: 16px;
 }
+
 .tabs button {
   padding: 4px 12px;
   text-decoration: none;
@@ -77,28 +79,23 @@ main {
   justify-content: space-evenly;
 }
 
+/* containers */
+
 .avatar-container {
   width: 409px;
   height: 445px;
-  /* margin: 0 auto; */
   border: var(--border);
   border-radius: 20px;
   text-align: center;
-}
-
-.avatar-body {
-  width: 409px;
-  height: 445px;
   position: relative;
 }
 
-.head {
-  position: absolute;
-  top: 0;
-  left: 0;
+.avatar-head-container {
+  width: 409px;
+  height: 445px;
 }
 
-.avatar-container button{
+.avatar-container button{ 
   padding: 4px 8px;
   margin: 15px 5px;
   color: var(--dark);
@@ -113,18 +110,64 @@ main {
 }
 
 .tabs {
- display: flex;
- justify-content: space-evenly;
- align-items: baseline;
- border-bottom: 1px solid #6a6d6f;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  border-bottom: 1px solid #6a6d6f;
 }
 
-.face-shapes {
+.colors-container {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid var(--bg);
+}
+
+.face-container {
   margin: 10px auto;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
 }
+
+/* options- images  */
+
+.head {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hair {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eyes {
+  position: absolute;
+  top: 200px;
+  left: 144px;
+}
+
+.nose {
+  position: absolute;
+  top: 212px;
+  left: 150px;
+}
+
+.mouth {
+  position: absolute;
+  top: 267px;
+  left: 146px;
+}
+
+.clothes {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* options- btn  */
 
 .option-shape {
   display: inline-block;
@@ -138,10 +181,33 @@ main {
   background-position: center;
 }
 
-.option-shape:hover, .option-shape:active {
+.option-shape:hover {
   background-color: var(--bg);
   border: 1px solid #EFF4F7;
 } 
+
+.option-shape:active {
+  background-color: var(--bg);
+  border: 1px solid #878787;
+  background-image: url(img/icon-check.svg);
+} 
+
+.option-color {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin: 10px 0;
+  border: #aeaeae 1px solid;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.option-color:hover, .option-color:active {
+  border: #9b9b9b 2px solid;
+}
+
+
+/* face options  */
 
 .round {
   background-image: url(img/icon-face-round.svg);
@@ -155,24 +221,7 @@ main {
   background-image: url(img/icon-face-triangle.svg);
 }
 
-.colors-container {
-  margin-top: 40px;
-  padding: 20px;
-  border-radius: 20px;
-  border: 1px solid #6a6d6f;
-
-}
-
-.option-color {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  margin: 10px 0;
-  border: #aeaeae 1px solid;
-  border-radius: 10px;
-  background-color: white;
-}
-
+/* color options  */
 .color1 {
   background-color: black;
 }
@@ -202,4 +251,10 @@ main {
 }
 .color10 {
   background-color: #F7C374;
+}
+
+/* hair options  */
+
+.hair1 {
+  background-image: url(img/icon-face-round.svg);
 }

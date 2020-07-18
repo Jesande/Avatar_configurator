@@ -22,11 +22,15 @@ html {
 body {
   padding: 0;
   margin: 0;
-  
+  font-size: 1em;
   background-color: var(--light);
   font-family: 'Poppins', sans-serif;
   color: var(--dark);
-  
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: normal;
 }
 
 button {
@@ -81,6 +85,16 @@ main {
 
 /* containers */
 
+.flex-list {
+  padding: 0;
+  margin: 5px 0;
+  display: flex;
+
+}
+.flex-list li {
+  list-style: none;
+}
+
 .avatar-container {
   width: 409px;
   height: 445px;
@@ -101,9 +115,11 @@ main {
   color: var(--dark);
 }
 
+.options-wrapper {
+  max-width: 614px;
+
+}
 .options-container {
-  width: 614px;
-  height: 250px;
   padding: 15px;
   border-radius: 20px;
   background-color: var(--bg);
@@ -123,12 +139,12 @@ main {
   border: 2px solid var(--bg);
 }
 
-.face-container {
-  margin: 10px auto;
+.icons-container {
   padding: 20px;
-  background-color: white;
-  border-radius: 10px;
 }
+
+
+
 
 /* options- images  */
 
@@ -169,19 +185,22 @@ main {
 }
 /* options- btn  */
 
-.option-shape {
+.option-icon {
   display: inline-block;
   width: 77px;
   height: 93px;
   padding: 5px;
+  margin-right: 10px;
+
   border-radius: 10px;
-  background-color: white;
   border: 1px solid var(--bg);
+  background-color:var(--bg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .option-shape:hover {
+  background-color: white;
   background-color: var(--bg);
   border: 1px solid #EFF4F7;
 } 

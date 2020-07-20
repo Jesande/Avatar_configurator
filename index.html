@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <img src="img/logo.svg" alt="" width="150px">
   </header>
+
+  <div class="wrapper">
   <main>
     <section class="avatar-container">
       <article class="avatar-basic">
@@ -22,62 +25,69 @@
       </article>
       <article class="avatar-hair-container">
         <img id="hair1-img" src="img/hair1.svg" alt="" class="hair">
-        <img id="hair2-img" src="img/hair2.svg" alt="" class="hair hide">
-        <img id="hair3-img" src="img/hair3.svg" alt="" class="hair hide">
+        <img id="hair2-img" src="img/hair2.svg" alt="" class="hair">
+        <img id="hair3-img" src="img/hair3.svg" alt="" class="hair">
       </article>
       <article class="avatar-eyes-container">
-        <img id="eyes1-img" src="img/eyes1.svg" alt="" class="eyes hide">
-        <img id="eyes2-img" src="img/eyes2.svg" alt="" class="eyes hide">
+        <img id="eyes1-img" src="img/eyes1.svg" alt="" class="eyes">
+        <img id="eyes2-img" src="img/eyes2.svg" alt="" class="eyes">
         <img id="eyes3-img" src="img/eyes3.svg" alt="" class="eyes">
       </article>
-      <article class="avatar-nose-container">
-        <img id="nose1-img" src="img/nose1.svg" alt="" class="nose hide">
+      <!-- <article class="avatar-nose-container">
+        <img id="nose1-img" src="img/nose1.svg" alt="" class="nose ">
         <img id="nose2-img" src="img/nose2.svg" alt="" class="nose hide">
-        <img id="nose3-img" src="img/nose3.svg" alt="" class="nose  hide">
-      </article>
+        <img id="nose3-img" src="img/nose3.svg" alt="" class="nose hide">
+      </article> -->
       <article class="avatar-mouth-container">
-        <img id="mouth1-img" src="img/mouth1.svg" alt="" class="mouth hide">
-        <img id="mouth2-img" src="img/mouth2.svg" alt="" class="mouth hide">
-        <img id="mouth3-img" src="img/mouth3.svg" alt="" class="mouth  hide">
-        <img id="mouth4-img" src="img/mouth4.svg" alt="" class="mouth hide">
+        <img id="mouth1-img" src="img/mouth1.svg" alt="" class="mouth ">
+        <!-- <img id="mouth2-img" src="img/mouth2.svg" alt="" class="mouth hide">
+        <img id="mouth3-img" src="img/mouth3.svg" alt="" class="mouth hide">
+        <img id="mouth4-img" src="img/mouth4.svg" alt="" class="mouth hide"> -->
       </article>
       <article class="avatar-clothes-container">
-        <img id="clothes1-img" src="img/clothes1.svg" alt="" class="clothes hide">
-        <img id="mouth2-img" src="img/clothes2.svg" alt="" class="clothes hide">
-        <img id="clothes3-img" src="img/clothes3.svg" alt="" class="clothes">
-
+        <img id="clothes1-img" src="img/clothes1.svg" alt="" class="clothes">
+        <!-- <img id="mouth2-img" src="img/clothes2.svg" alt="" class="clothes hide">
+        <img id="clothes3-img" src="img/clothes3.svg" alt="" class="clothes hide"> -->
       </article>
       <article>
         <button>Reset</button>
       </article>
     </section>
-    <aside class="options-wrapper">
-      <h3>1. Personalize your avatar</h3>
+  </main>
 
-      <section class="options-container">
-      
+  <aside class="options-wrapper">
+    <h2>1. Personalize your avatar</h2>
+    <section class="options-container">
       <article class="icons-container">
         <h3>Shape</h3>
         <ul class="flex-list">
-          <li> <a id="face1-btn" href="" class="option-icon round"> </a> </li>
-          <li> <a id="face2-btn" href="" class="option-icon square"> </a> </li>
-          <li> <a id="face3-btn" href="" class="option-icon triangle"> </a> </li>
+          <li> <button id="face1-btn" href="" class="option-icon round"> </button> </li>
+          <li> <button id="face2-btn" href="" class="option-icon square"> </button> </li>
+          <li> <button id="face3-btn" href="" class="option-icon triangle"> </button> </li>
         </ul>
       </article>
-
       <article class="icons-container">
         <h3>Hair</h3>
         <ul class="flex-list">
-          <li> <a id="hair1-btn" href="" class="option-icon icon-hair1"> </a></li>
-          <li> <a id="hair2-btn" href="" class="option-icon icon-hair2"> </a></li>
-          <li> <a id="hair3-btn" href="" class="option-icon icon-hair3"> </a></li>
+          <li> <button id="hair1-btn" href="" class="option-icon icon-hair1"> </button></li>
+          <li> <button id="hair2-btn" href="" class="option-icon icon-hair2"> </button></li>
+          <li> <button id="hair3-btn" href="" class="option-icon icon-hair3"> </button></li>
+          <li> <button id="hair3-btn" href="" class="option-icon icon-hair4"> </button></li>
+        </ul>
+      </article>
+      <article class="icons-container">
+        <h3>Eyes</h3>
+        <ul class="flex-list">
+          <li> <button id="eyes1-btn" href="" class="option-icon icon-eyes1"> </button></li>
+          <li> <button id="eyes2-btn" href="" class="option-icon icon-eyes2"> </button></li>
+          <li> <button id="eyes3-btn" href="" class="option-icon icon-eyes3"> </button></li>
+          <li> <button id="eyes4-btn" href="" class="option-icon icon-eyes4"> </button></li>
         </ul>
       </article>
     </section>
-
-    <section class="colors-container">
-      <h3>Color the hair</h3>
-      <article class="colors-content">
+    <section>
+      <h2>2. Color the hair</h2>
+      <article class="colors-container">
         <a href="" class="option-color color1"> </a>
         <a href="" class="option-color color2"> </a>
         <a href="" class="option-color color3"> </a>
@@ -90,11 +100,10 @@
         <a href="" class="option-color color10"> </a>
       </article>
     </section>
-
   </aside>
+</div>
 
-  </main>
-
-  <script src="main.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script> -->
+<script src="main.js"> </script>
 </body>
 </html>

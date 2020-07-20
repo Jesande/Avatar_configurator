@@ -266,33 +266,27 @@ aside {
 
 /* color options  */
 .color1 {
-  background-color: black;
+  background-color: #000000;
 }
 .color2 {
-  background-color:#ebf0f2;
+  background-color: #ffffff;
 }
 .color3 {
-  background-color: white;
-}
-.color4 {
-  background-color:#FFE8E3;
-}
-.color5 {
-  background-color:#F2D1C9;
-}
-.color6 {
-  background-color: #FFF2DE;
-}
-.color7 {
   background-color:#97B7FF;
 }
-.color8 {
+.color4 {
   background-color:#97E7FF;
 }
-.color9 {
-  background-color: #FFAA96;
+.color5 {
+  background-color:#F49BA8;
 }
-.color10 {
+.color6 {
   background-color: #F7C374;
+}
+.color7 {
+  background-color:#C3B8FC;
+}
+.color8 {
+  background-color:#9BCC99;
 }
 

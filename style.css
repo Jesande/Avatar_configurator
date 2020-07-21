@@ -43,10 +43,6 @@ button {
   font-size: 16px;
 }
 
-.hide {
-  opacity: 0;
-}
-
 header {
   width: 100%;
   height: 100px;
@@ -133,13 +129,21 @@ aside {
   border: 2px solid var(--bg);
 }
 
-
-
-
-
 /* options- images  */
+.hide {
+  opacity: 0;
+}
 
-.head {
+.reset-img{
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.face {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;

@@ -56,7 +56,8 @@ document.getElementById('color8-btn').addEventListener('click', colorTheHair);
 
 
 function colorTheHair(event) {
+  console.log("#" + event.target.dataset.color);
+
   let colorToUse = event.target.dataset.color;
-  //let hairToColor = ???? how to grab the hair that was choosen?
-  gsap.to(hairToColor, { fill: colorToUse, duration: .25 });
+  gsap.to(".hair", { fill: colorToUse, duration: .25 });
 }

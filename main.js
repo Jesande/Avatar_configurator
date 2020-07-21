@@ -1,3 +1,14 @@
+
+var timeline = gsap.timeline();
+
+function fadeIn() {
+  timeline.from("main", { y: -40, alpha: 0});
+  timeline.from("aside", { y: -40, alpha: 0});
+  timeline.from(".animate", { scale: .2, alpha: 0, stagger: .08});
+};
+
+fadeIn();
+
 // var btn for shapes
 document.getElementById('btn-face1').addEventListener('click', showFace);
 document.getElementById('btn-face2').addEventListener('click', showFace);
@@ -73,5 +84,5 @@ function reset() {
   gsap.to(".face", { opacity:0, duration: .25 });
   gsap.to(".hair", { opacity:0, duration: .25, delay:.15 });
   gsap.to(".eyes", { opacity:0, duration: .25, delay:.25  });
-  gsap.to(".reset-img", { opacity: 1, duration:.35, delay:.35 });
+  gsap.to(".reset-img", { opacity: .2, duration:.35, delay:.35 });
 }

@@ -45,6 +45,7 @@ function showEyes(event) {
 }
   
 
+// var btn for colors
 document.getElementById('color1-btn').addEventListener('click', colorTheHair);
 document.getElementById('color2-btn').addEventListener('click', colorTheHair);
 document.getElementById('color3-btn').addEventListener('click', colorTheHair);
@@ -54,10 +55,23 @@ document.getElementById('color6-btn').addEventListener('click', colorTheHair);
 document.getElementById('color7-btn').addEventListener('click', colorTheHair);
 document.getElementById('color8-btn').addEventListener('click', colorTheHair);
 
-
+// COLOR THE HAIR
 function colorTheHair(event) {
   console.log("#" + event.target.dataset.color);
 
   let colorToUse = event.target.dataset.color;
   gsap.to(".hair", { fill: colorToUse, duration: .25 });
+}
+
+
+// RESET AVATAR
+
+document.getElementById('reset-btn').addEventListener('click', reset);
+
+function reset() {
+  console.log("start over");
+  gsap.to(".face", { opacity:0, duration: .25 });
+  gsap.to(".hair", { opacity:0, duration: .25 });
+  gsap.to(".eyes", { opacity:0, duration: .25 });
+  gsap.to(".reset-img", { opacity: 1, duration:0 });
 }

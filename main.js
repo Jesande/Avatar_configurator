@@ -71,7 +71,7 @@ document.getElementById('reset-btn').addEventListener('click', reset);
 function reset() {
   console.log("start over");
   gsap.to(".face", { opacity:0, duration: .25 });
-  gsap.to(".hair", { opacity:0, duration: .25 });
-  gsap.to(".eyes", { opacity:0, duration: .25 });
-  gsap.to(".reset-img", { opacity: 1, duration:0 });
+  gsap.to(".hair", { opacity:0, duration: .25, delay:.15 });
+  gsap.to(".eyes", { opacity:0, duration: .25, delay:.25  });
+  gsap.to(".reset-img", { opacity: 1, duration:.35, delay:.35 });
 }

@@ -203,8 +203,16 @@ aside {
   border: 1px solid #EFF4F7;
 } 
 
-.option-icon:active {
+button:focus {
   background-color: white;
+  border: 1px solid #878787;
+} 
+
+.active {
+  background-color: white;
+  border: 1px solid #878787;
+} 
+.color-active {
   border: 1px solid #878787;
 } 
 

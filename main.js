@@ -2,8 +2,9 @@
 var timeline = gsap.timeline();
 
 function fadeIn() {
+  timeline.from("header", { y: -40, alpha: 0});
   timeline.from("main", { y: -40, alpha: 0});
-  timeline.from("aside", { y: -40, alpha: 0});
+  timeline.from("aside", { y: -40, alpha: 0}, 0);
   timeline.from(".animate", { scale: .2, alpha: 0, stagger: .08});
 };
 

@@ -36,6 +36,10 @@ body {
   transition: all 300ms ease-in;
 }
 
+.logo {
+  width: 150px;
+}
+
 h2 {
   font-size: 1em;
   font-weight: normal;
@@ -74,7 +78,7 @@ header {
 
 main {
   max-width: 415px;
-  margin: 30px;
+  margin: 0 30px;
   transition: all 300ms ease-in;
 }
 
@@ -153,7 +157,7 @@ main {
 
 .options-wrapper {
   max-width: 600px;
-  margin: 30px;
+  margin: 0 30px;
   transition: all 300ms ease-in;
 }
 
@@ -246,7 +250,6 @@ main {
 }
 
 button:focus {
-  background-color: white;
   border: 1px solid #878787;
 } 
 

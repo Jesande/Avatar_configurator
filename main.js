@@ -2,9 +2,9 @@
 var timeline = gsap.timeline();
 
 function fadeIn() {
-  timeline.from("header", { y: -40, alpha: 0});
-  timeline.from("main", { y: -40, alpha: 0});
-  timeline.from("aside", { y: -40, alpha: 0}, 0);
+  // timeline.from("header", { y: -40, alpha: 0});
+  // timeline.from("main", { y: -40, alpha: 0});
+  // timeline.from("aside", { y: -40, alpha: 0}, 0);
   timeline.from(".animate", { scale: .2, alpha: 0, stagger: .08});
 };
 
@@ -28,9 +28,7 @@ let lastHairButtonClicked = document.getElementById('hair1-btn');
 let lastEyesButtonClicked = document.getElementById('eyes1-btn');
 
 // SHOW FACES
-function showFace(event) {
-  console.log("#" + event.target.dataset.element + "-img");
-  
+function showFace(event) {  
   gsap.to(".reset-img", { opacity: 0, duration:0 });
   gsap.to(".face", { opacity: 0, duration:0 });
   
@@ -89,13 +87,15 @@ let lastColorButtonClicked = document.getElementById('color1-btn');
 
 // COLOR THE HAIR
 function colorTheHair(event) {
-
   let colorToUse = event.target.dataset.color;
-  gsap.to(".hair", { fill: colorToUse, duration: .25 });
+  gsap.to(".hair", { backgroundColor: colorToUse, fill: colorToUse, duration: .25 });
   if (lastColorButtonClicked) {
-    lastColorButtonClicked.classList.remove('color-active');
+    lastColorButtonClicked.classList.remove('active');
   }
-  event.target.classList.add('color-active');
+  event.target.classList.add('active');
+  console.log(event.target);
+  // gsap.to(event.target, {border:"1px solid  #878787", fill: colorToUse});
+
   lastColorButtonClicked = event.target;
 }
 

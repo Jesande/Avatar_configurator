@@ -87,7 +87,7 @@ let lastColorButtonClicked = document.getElementById('color1-btn');
 
 // COLOR THE HAIR
 function colorTheHair(event) {
-  let colorToUse = event.target.dataset.color;
+  let colorToUse = "#" + event.target.dataset.color;
   gsap.to(".hair", { fill: colorToUse, duration: .25 });
   if (lastColorButtonClicked) {
     lastColorButtonClicked.classList.remove('active');

@@ -1,15 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="start" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="409px" height="445px" viewBox="0 0 409 445" enable-background="new 0 0 409 445" xml:space="preserve">
-<g>
-	<path id="Trazado_2014" fill="#F7C374" stroke="#2B343B" stroke-width="1.038" stroke-linecap="round" stroke-linejoin="round" d="
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="409px" height="445px" viewBox="0 0 409 445">
+	<path fill="#F7C374" stroke="#2B343B" stroke-width="1.038" stroke-linecap="round" stroke-linejoin="round" d="
 		M236.6,370.9c-0.7,11.9-27.4,26.1-27.4,26.1c0,15.2-3.7,21.7-3.7,21.7s-3.5-8.1-4.2-22.1c0,0-28.7-15.9-28.8-25.6
 		c-37.6,10-60.7,41.5-60.7,73.1l92.7,0l92.7,0C297.2,412.4,274.2,380.9,236.6,370.9z"/>
-	<path id="Trazado_2015" fill="none" stroke="#2B343B" stroke-miterlimit="10" d="M171.1,371.2c-5.8,4.1-9.6,10.5-10.6,17.5
+	<path fill="none" stroke="#2B343B" stroke-miterlimit="10" d="M171.1,371.2c-5.8,4.1-9.6,10.5-10.6,17.5
 		c-0.2,0.7-0.1,1.4,0.2,2c0.6,0.8,1.5,1.2,2.4,1.3c12.5,2.7,25.2,4.4,38,5.3"/>
-	<path id="Trazado_2016" fill="none" stroke="#2B343B" stroke-miterlimit="10" d="M239.4,371.2c5.8,4.1,9.6,10.5,10.6,17.5
+	<path fill="none" stroke="#2B343B" stroke-miterlimit="10" d="M239.4,371.2c5.8,4.1,9.6,10.5,10.6,17.5
 		c0.2,0.7,0.1,1.4-0.2,2c-0.6,0.8-1.5,1.2-2.4,1.3c-12.5,2.7-25.2,4.4-38,5.3"/>
-	<circle id="Elipse_8" fill="#2B343B" cx="217.1" cy="407.3" r="2.3"/>
-</g>
+	<circle fill="#2B343B" cx="217.1" cy="407.3" r="2.3"/>
 </svg>

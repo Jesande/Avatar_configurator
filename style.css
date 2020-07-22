@@ -17,6 +17,7 @@
 html {
   font-size: 18px;
   line-height: 1.5em;
+  transition: all 300ms ease-in;
 }
 
 @media (max-width:768px) {
@@ -32,6 +33,7 @@ body {
   background-color: var(--light);
   font-family: 'Poppins', sans-serif;
   color: var(--dark);
+  transition: all 300ms ease-in;
 }
 
 h2 {
@@ -60,7 +62,9 @@ header {
   margin: 20px auto;
   display: flex;
   justify-content: space-evenly;
+  transition: all 300ms ease-in;
 }
+
 @media (max-width:768px) {
   .wrapper {
     flex-direction: column;
@@ -71,6 +75,7 @@ header {
 main {
   max-width: 415px;
   margin: 20px auto;
+  transition: all 300ms ease-in;
 }
 
 @media (max-width:920px) {
@@ -103,21 +108,23 @@ main {
   border-radius: 20px;
   text-align: center;
   position: relative;
+  transition: all 300ms ease-in;
 }
 
 .avatar-head-container {
   width: 409px;
   height: 445px;
+  transition: all 300ms ease-in;
 }
 
- @media (max-width:425px) {
+@media (max-width:425px) {
   .avatar-container {
     width: 100%;
-    height: 400px;
+    height: 350px;
   }
   .avatar-head-container {
-    width: 320px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 } 
 
@@ -152,6 +159,7 @@ main {
 .options-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  transition: all 300ms ease-in;
 }
 
 .options-container {
@@ -181,6 +189,7 @@ main {
   align-items: center;
   border-bottom: 2px solid #C3CFD6;
 }
+
 .icons-container:last-child {
   border-bottom:none;
 }
@@ -206,51 +215,7 @@ main {
   z-index: -1;
 }
 
-.face {
-  width: 100%;
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.hair {
-  width: 100%;
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.eyes {
-  opacity: 0;
-  position: absolute;
-  top: 200px;
-  left: 144px;
-}
-
-.nose {
-  position: absolute;
-  top: 212px;
-  left: 150px;
-}
-
-.mouth {
-  position: absolute;
-  top: 267px;
-  left: 146px;
-}
-@media (max-width:425px) {
-  .hair {
-    bottom: -50px;
-  }
-  .eyes {
-    top: 210px;
-    left: 109px;
-    width: 100px;
-  }
-} 
-.clothes {
+.face, .hair, .eyes, .clothes {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -271,6 +236,7 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  transition: all 300ms ease-in;
 }
 
 .option-icon:hover {

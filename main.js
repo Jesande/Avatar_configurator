@@ -45,9 +45,7 @@ function showFace(event) {
 }
   
 // SHOW HAIR
-function showHair(event) {
-  console.log("#" + event.target.dataset.element + "-img");
-  
+function showHair(event) {  
   gsap.to(".reset-img", { opacity: 0, duration:0 });
   gsap.to(".hair", { opacity: 0, duration:0 });
   
@@ -63,8 +61,6 @@ function showHair(event) {
 
 // SHOW EYES
 function showEyes(event) {
-  console.log("#" + event.target.dataset.element + "-img");
-
   gsap.to(".reset-img", { opacity: 0, duration:0 });
   gsap.to(".eyes", { opacity: 0, duration:0 });
   
@@ -93,7 +89,6 @@ let lastColorButtonClicked = document.getElementById('color1-btn');
 
 // COLOR THE HAIR
 function colorTheHair(event) {
-  console.log("#" + event.target.dataset.color);
 
   let colorToUse = event.target.dataset.color;
   gsap.to(".hair", { fill: colorToUse, duration: .25 });
@@ -109,9 +104,12 @@ function colorTheHair(event) {
 document.getElementById('reset-btn').addEventListener('click', reset);
 
 function reset() {
-  console.log("start over");
   gsap.to(".face", { opacity:0, duration: .25 });
   gsap.to(".hair", { opacity:0, duration: .25, delay:.15 });
   gsap.to(".eyes", { opacity:0, duration: .25, delay:.25  });
   gsap.to(".reset-img", { opacity: .2, duration:.35, delay:.35 });
+  lastFaceButtonClicked.classList.remove('active');
+  lastHairButtonClicked.classList.remove('active');
+  lastEyesButtonClicked.classList.remove('active');
+  lastColorButtonClicked.classList.remove('color-active');
 }

@@ -1,4 +1,4 @@
-
+// initial animation
 var timeline = gsap.timeline();
 
 function fadeIn() {
@@ -23,11 +23,9 @@ document.getElementById('eyes2-btn').addEventListener('click', showEyes);
 document.getElementById('eyes3-btn').addEventListener('click', showEyes);
 document.getElementById('eyes4-btn').addEventListener('click', showEyes);
 
-
 let lastFaceButtonClicked = document.getElementById('btn-face1');
 let lastHairButtonClicked = document.getElementById('hair1-btn');
 let lastEyesButtonClicked = document.getElementById('eyes1-btn');
-
 
 // SHOW FACES
 function showFace(event) {
@@ -93,7 +91,6 @@ document.getElementById('color8-btn').addEventListener('click', colorTheHair);
 
 let lastColorButtonClicked = document.getElementById('color1-btn');
 
-
 // COLOR THE HAIR
 function colorTheHair(event) {
   console.log("#" + event.target.dataset.color);
@@ -106,7 +103,6 @@ function colorTheHair(event) {
   event.target.classList.add('color-active');
   lastColorButtonClicked = event.target;
 }
-
 
 // RESET AVATAR
 
